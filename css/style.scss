@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,900;1,700;1,900&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
+h1 {
+  color: rgb(222, 115, 9);
+  font-weight: 700;
+  font-size: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+.container_header {
+  display: grid;
+  justify-items: stretch;
+  align-items: center;
+  padding: 20px 50px 0px;
+  header,
+  .controls {
+    grid-area: 1/1/2/2;
+  }
+}
+
+header {
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  transition: transform 2s ease;
+
+  article {
+    width: 100vw;
+    flex-shrink: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    img,
+    h2 {
+      grid-area: 1/1/2/2;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+}
+
+.controls {
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+
+  span {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: rgb(222, 115, 9);
+  }
+}
+
+/* 
+display: grid;
+grid-auto-flow: column
+overflow-x : scroll;
+scroll-snap-type: x mandatory
+
+-----
+
+endants: 
+donner : un width*/
