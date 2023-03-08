@@ -62,6 +62,9 @@ header {
 .controls span:hover {
   color: rgb(222, 115, 9);
 }
+.controls .next {
+  opacity: 0.4;
+}
 
 /* 
 display: grid;

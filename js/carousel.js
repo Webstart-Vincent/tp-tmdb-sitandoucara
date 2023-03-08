@@ -35,12 +35,12 @@ const moveCarousel = () => {
 
 const setControls = () => {
   if (index == 0 || index < 0) {
-    nextBtn.style.opacity = "0.5";
+    nextBtn.style.opacity = "0.4";
   } else {
     nextBtn.style.opacity = "1";
   }
   if (index === carouselLength - 1) {
-    previousBtn.style.opacity = "0.5";
+    previousBtn.style.opacity = "0.4";
   } else {
     previousBtn.style.opacity = "1";
   }
@@ -54,7 +54,6 @@ nextBtn.addEventListener("click", () => {
 
 previousBtn.addEventListener("click", () => {
   if (index < carouselLength - 1) index++;
-
   console.log(index);
   moveCarousel();
   setControls();
