@@ -105,12 +105,12 @@ h1 {
 
   span {
     font-size: 50px;
-    color: white;
+    color: #468397;
     cursor: pointer;
   }
 
   span:hover {
-    color: rgb(222, 115, 9);
+    color: white;
   }
 
   .next {
@@ -136,7 +136,7 @@ nav {
 }
 
 .logo {
-  width: 70px;
+  width: 150px;
 }
 
 .brand,
@@ -184,10 +184,8 @@ nav {
 }
 
 .header_page2_container {
-  /*display: grid;
-  grid-template-columns: 5fr 7fr;*/
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr;
   padding: 20px;
   h2 {
     padding-bottom: 10px;
@@ -210,10 +208,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     .persos {
       display: grid;
       gap: 10px;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      .hide {
+        display: none;
+      }
     }
     .info {
       display: grid;
@@ -225,7 +227,7 @@ nav {
 
 /****RESPONSIVE****/
 
-@media (min-width: 750px) {
+@media (min-width: 760px) {
   .all_container {
     display: grid;
     min-height: 100vh;
@@ -274,6 +276,41 @@ nav {
 
   .carousel_container {
     order: 1;
+  }
+
+  /*---PAGE2---*/
+  .header_page2_container {
+    /*display: grid;
+    grid-template-columns: 5fr 7fr;*/
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    .contain2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .header_page2_container {
+    /*display: grid;
+    grid-template-columns: 5fr 7fr;*/
+    display: grid;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    .contain2 {
+      .persos {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(5, 1fr);
+        .hide {
+          display: block;
+        }
+      }
+    }
   }
 }
 
