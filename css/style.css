@@ -85,7 +85,8 @@ h1 {
   align-content: space-around;
   justify-items: end;
   width: 30%;
-  font-size: 20px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .carousel_container {
@@ -308,6 +309,15 @@ nav {
   }
 }
 @media (min-width: 600px) {
+  .text {
+    z-index: 2;
+    display: grid;
+    align-content: space-around;
+    justify-items: end;
+    width: 30%;
+    line-height: 27px;
+    font-size: 20px;
+  }
   .header_page2_container {
     /*display: grid;
     grid-template-columns: 5fr 7fr;*/
