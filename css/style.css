@@ -240,6 +240,11 @@ nav {
   .hide {
     display: block;
   }
+  .header_page2_container .contain2 .persos {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 @media (min-width: 760px) {
   .all_container {
@@ -316,7 +321,7 @@ nav {
   .header_page2_container .contain2 .persos {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    /*grid-template-columns: repeat(3, 1fr);*/
   }
 }
 /* 
