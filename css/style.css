@@ -189,6 +189,10 @@ nav {
 .header_page2_container h2 {
   padding-bottom: 10px;
 }
+.header_page2_container h3 {
+  text-align: center;
+  padding-top: 5px;
+}
 .header_page2_container .contain1 {
   display: flex;
   justify-content: space-between;
@@ -222,6 +226,9 @@ nav {
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
 }
+.header_page2_container .text_contain1 p {
+  padding-top: 20px;
+}
 
 /****RESPONSIVE****/
 @media (min-width: 760px) {
@@ -250,7 +257,8 @@ nav {
   .header_accueil {
     display: grid;
     grid-template-columns: 7fr 5fr;
-    align-items: start;
+    align-items: stretch;
+    align-content: center;
   }
   .header_accueil img {
     max-height: 100%;
@@ -280,6 +288,9 @@ nav {
     align-items: flex-end;
     flex-wrap: nowrap;
   }
+  .img_perso {
+    width: 145px;
+  }
 }
 @media (min-width: 600px) {
   .header_page2_container {
@@ -288,6 +299,9 @@ nav {
     display: grid;
     grid-template-rows: 1fr;
     padding: 20px;
+  }
+  .header_page2_container .contain2 {
+    padding-top: 10px;
   }
   .header_page2_container .contain2 .persos {
     display: grid;
